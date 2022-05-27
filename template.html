@@ -53,15 +53,17 @@
 <body>
     <nav id="flyte-frame-nav">
         <ul id="flyte-frame-tabs">
-            {% for key, value in metadata.items() %}
-                <li onclick="handleLinkClick(this)">{{key}}</li>
-            {% endfor %}
+            <li onclick="handleLinkClick(this)">FlyteDeck Tab1</li>
+            <li onclick="handleLinkClick(this)">FlyteDeck Tab2</li>
+            <li onclick="handleLinkClick(this)">FlyteDeck Tab3</li>
+            <li onclick="handleLinkClick(this)">FlyteDeck Tab4</li>
         </ul>
     </nav>
     <div id="flyte-frame-container">
-        {% for key, value in metadata.items() %}
-            <div>{{value}}</div>
-        {% endfor %}
+        <div><h1>Hey Deck1, how are you doing?</h1></div>
+        <div><h1>Hey Deck2, how are you doing?</h1></div>
+        <div><h1>Hey Deck3, how are you doing?</h1></div>
+        <div><h1>Hey Deck4, how are you doing?</h1></div>
     </div>
 </body>
 <script>
